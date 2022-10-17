@@ -33,5 +33,34 @@ function toggleTheme() {
 
 themeBtn.addEventListener('click', toggleTheme)
 
-
+// Date and Time Buttons
+const form = document.body.querySelector("#radioForm")
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log("FORM WAS SUBMITTED");
+    const formData = new FormData(form);
+    console.log(formData.get('selection'))
+    const formOutput = document.createElement('div');
+    const dataType = formData.get('selection');
+    let text = '';
+    const date = new Date()
+    if (dataType === 'dateID') {
+        text = `The current date is: ${date.toString().slice(0,15)}`;
+    } else if (dataType === 'timeID') {
+        const date = new Date();
+        const options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            second:'numeric',
+            hour12: true
+        };
+        const timeString = date.toLocaleString('en-US', options);
+        console.log(timeString);
+        text = `The current time is: ${timeString}`;
+    } else {
+        text = `Uh Oh, you did not select an option!`;
+    }
+    formOutput.innerHTML = text.toString();
+    form.appendChild(formOutput)
+})
 

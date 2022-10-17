@@ -122,6 +122,7 @@ footer {
     background-color: rgb(200, 200, 200);
     border-radius: 20px 20px 0px 0px;
     padding-top: 5px;
+    color: black !important;
 }
 
 
