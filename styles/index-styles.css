@@ -60,10 +60,10 @@ a:visited {
 
 .light-background {
     background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("../assets/light-index.jpg");
-    color: rgb(20, 20, 20);
+    color: rgb(20, 20, 20) !important;
 }
 
 .dark-background {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/light-index.jpg");
-    color: rgb(220, 220, 220;
+    color: rgb(220, 220, 220) !important;
 }
