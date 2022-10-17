@@ -1,53 +1,3 @@
-body {
-    margin: 0px;
-    width: 100vw;
-    margin: auto;
-    opacity: 1;
-}
-
-main {
-    width: 80vw;
-    margin: auto;
-}
-
-#header {
-    background-color: rgb(247, 135, 135);
-    margin: 0px;
-    padding: 0px;
-    border-radius: 0px 0px 22px 22px;
-}
-
-#header p {
-
-    margin: 0px;
-    height: 44px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-nav {
-    position: sticky;
-    top: 0px;
-}
-
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: pink;
-    width: 60%;
-    margin: auto;
-    border-radius: 0px 0px 20px 20px;
-}
-
-.navBtn {
-    padding: 10px 20px;
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
-
 #themeDiv {
     position: relative;
     left: 90%;
@@ -81,14 +31,6 @@ nav {
     color: rgb(61, 61, 61);
 }
 
-#mainBody {
-    padding-top: 30px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
 figure {
     display: flex;
     flex-flow: column;
@@ -116,23 +58,13 @@ a:visited {
     color: brown;
 }
 
-footer {
-    text-align: center;
-    background-color: rgb(200, 200, 200);
-    border-radius: 20px 20px 0px 0px;
-    padding-top: 5px;
-    color: black !important;
+.light-background {
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("../assets/light-index.jpg");
+    color: rgb(20, 20, 20);
 }
 
+.dark-background {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/light-index.jpg");
+    color: rgb(220, 220, 220;
 
-#contactList {
-    display: flex;
-    list-style: none;
-    margin: 10px auto;
-    padding: 0px;
-    width: 150px;
-}
-
-.contactItem {
-    flex-grow: 1;
 }
