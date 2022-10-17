@@ -40,7 +40,13 @@ form.addEventListener('submit', (e) => {
     console.log("FORM WAS SUBMITTED");
     const formData = new FormData(form);
     console.log(formData.get('selection'))
-    const formOutput = document.createElement('div');
+    let formOutput;
+    if (document.body.querySelector("#calendarID") === null) {
+        formOutput = document.createElement('div');
+        formOutput.setAttribute("id", "calendarID");
+    } else {
+        formOutput = document.body.querySelector("#calendarID");
+    }
     const dataType = formData.get('selection');
     let text = '';
     const date = new Date()
