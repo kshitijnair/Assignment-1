@@ -2,68 +2,17 @@ body {
     margin: 0px;
     width: 100vw;
     margin: auto;
-    background-image: url("../assets/bga3.jpg");
+    /* background-image: url("../assets/bga3.jpg"); */
+    /* color: white; */
 }
 
-#header {
-    background-color: rgb(247, 135, 135);
-    margin: 0px;
-    padding: 0px;
-    border-radius: 0px 0px 22px 22px;
+.light-background {
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("../assets/light-project.jpg");
+    color: rgb(20, 20, 20);
 }
 
-#header p {
-    margin: 0px;
-    height: 44px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-}
+.dark-background {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/light-project.jpg");
+    color: rgb(255, 255, 255);
 
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: pink;
-    width: 60%;
-    margin: auto;
-    border-radius: 0px 0px 20px 20px;
-}
-
-.navBtn {
-    padding: 10px 20px;
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
-
-#mainBody {
-    color: white;
-    padding-top: 30px;
-    vertical-align: middle;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-a:visited {
-    color: brown;
-}
-
-footer {
-    text-align: center;
-    background-color: rgb(200, 200, 200);
-    border-radius: 20px 20px 0px 0px;
-    padding-top: 5px;
-}
-
-#contactList {
-    display: flex;
-    list-style: none;
-    margin: 10px auto;
-    padding: 0px;
-    width: 150px;
-}
-
-.contactItem {
-    flex-grow: 1;
 }

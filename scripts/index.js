@@ -19,15 +19,11 @@ function toggleTheme() {
     // change theme here
     if (themeClass.contains("light")) {
         themeBtn.innerHTML = "Dark Mode";
-        // bodyElement.style.backgroundImage = 'linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("./assets/light-index.jpg")';
-        // bodyElement.style.color = "rgb(20,20,20)";
         bodyElement.classList.add('light-background');
         bodyElement.classList.remove('dark-background');
         localStorage.setItem('userTheme', 'light');
     } else {
         themeBtn.innerHTML = "Light Mode";
-        // bodyElement.style.backgroundImage = 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./assets/light-index.jpg")';
-        // bodyElement.style.color = "rgb(220, 220, 220)";
         bodyElement.classList.add('dark-background');
         bodyElement.classList.remove('white-background');
         localStorage.setItem('userTheme', 'dark');
