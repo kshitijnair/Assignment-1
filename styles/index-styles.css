@@ -2,7 +2,8 @@ body {
     margin: 0px;
     width: 100vw;
     margin: auto;
-    background-image: url("../assets/light-index.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("../assets/light-index.jpg");
+    opacity: 1;
 }
 
 main {
