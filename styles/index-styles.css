@@ -1,8 +1,13 @@
 body {
     margin: 0px;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
     background-image: url("../assets/bga1.jpg");
+}
+
+main {
+    width: 80vw;
+    margin: auto;
 }
 
 #header {
@@ -13,7 +18,7 @@ body {
 }
 
 #header p {
-    
+
     margin: 0px;
     height: 44px;
     text-align: center;
